@@ -19,18 +19,18 @@ public class City {
 
     @NotNull
     @Min(value = 0, message = " phải là số dương")
-//    @Pattern(regexp = "(^$|[0-9])" , message = "phải là số")
-    private Long area;
+    @Pattern(regexp = "(^$|[0-9]{1,20})" , message = "phải là số")
+    private String area;
 
     @NotNull
     @Min(value = 0, message = " phải là số dương")
-//    @Pattern(regexp = "(^$|[0-9])" , message = "phải là số")
-    private Long population;
+    @Pattern(regexp = "(^$|[0-9]{1,20})" , message = "phải là số")
+    private String population;
 
     @NotNull
     @Min(value = 0, message = " phải là số dương")
-//    @Pattern(regexp = "(^$|[0-9])" , message = "phải là số")
-    private Long gdp;
+    @Pattern(regexp = "(^$|[0-9]{1,20})" , message = "phải là số")
+    private String gdp;
 
     @NotNull
     private String description;
